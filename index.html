@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>每周壁纸下载</title>
+  <style>
+    body { font-family: sans-serif; max-width: 600px; margin: auto; padding: 20px; }
+    h1 { text-align: center; }
+    .wallpaper { margin-bottom: 20px; border-bottom: 1px solid #ddd; padding-bottom: 10px; }
+    .wallpaper img { max-width: 100%; cursor: pointer; }
+    .download-link { display: none; margin-top: 8px; }
+    .pagination { text-align: center; margin-top: 30px; }
+    button { padding: 6px 12px; margin: 0 5px; }
+  </style>
+</head>
+<body>
+  <h1>每周壁纸下载</h1>
+  <div id="wallpaper-list"></div>
+  <div class="pagination">
+    <button onclick="prevPage()">上一页</button>
+    <span id="page-info"></span>
+    <button onclick="nextPage()">下一页</button>
+  </div>
+
+  <script src="wallpapers.js"></script>
+  <script>
+    let currentPage = 1;
+    const pageSize = 10;
+
+    function renderWallpapers() {
+      const list = document.getElementById('wallpaper-list');
+      list.innerHTML = '';
+
+      const start = (currentPage - 1) * pageSize;
+      const end = start + pageSize;
+      const pageWallpapers = wallpapers.slice(start, end);
+
+      pageWallpapers.forEach(wp => {
+        const div = document.createElement('div');
+        div.className = 'wallpaper';
+
+        const img = document.createElement('img');
+        img.src = wp.thumbnail;
+        img.onclick = () => {
+          const link = div.querySelector('.download-link');
+          link.style.display = link.style.display === 'none' ? 'block' : 'none';
+        };
+
+        const link = document.createElement('a');
+        link.href = wp.download;
+        link.innerText = '点击下载原图';
+        link.target = '_blank';
+        link.className = 'download-link';
+
+        div.appendChild(img);
+        div.appendChild(link);
+        list.appendChild(div);
+      });
+
+      document.getElementById('page-info').innerText =
+        `第 ${currentPage} 页，共 ${Math.ceil(wallpapers.length / pageSize)} 页`;
+    }
+
+    function nextPage() {
+      if (currentPage * pageSize < wallpapers.length) {
+        currentPage++;
+        renderWallpapers();
+      }
+    }
+
+    function prevPage() {
+      if (currentPage > 1) {
+        currentPage--;
+        renderWallpapers();
+      }
+    }
+
+    renderWallpapers();
+  </script>
+</body>
+</html>
