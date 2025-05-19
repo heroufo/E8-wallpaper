@@ -1,6 +1,6 @@
 const wallpapers = [
-  { thumbnail: 'https://ibb.co/ycPtSrTP', download: '' },
-  { thumbnail: 'https://ibb.co/SDvCNtfT', download: '' },
+  { thumbnail: 'https://i.ibb.co/pBwcySDw/E8-17.jpg', download: '' },
+  { thumbnail: 'https://i.ibb.co/JWkJnv3L/E8-92.jpg', download: '' },
   { thumbnail: 'https://ibb.co/DD30sbn7', download: '' },
   { thumbnail: 'https://ibb.co/Ndx5CkZP', download: '' },
   { thumbnail: 'https://ibb.co/KjfBBtXF', download: '' },
