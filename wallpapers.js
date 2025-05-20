@@ -1,5 +1,5 @@
 const wallpapers = [
-  { thumbnail: 'https://i.ibb.co/pBwcySDw/E8-17.jpg', download: 'https://i.ibb.co/fG2rKFK8/E8-17.jpg' },
+  { thumbnail: 'https://i.ibb.co/pBwcySDw/E8-17.jpg', download: 'https://s21.ax1x.com/2025/05/19/pExpcAU.jpg' },
   { thumbnail: 'https://i.ibb.co/JWkJnv3L/E8-92.jpg', download: 'https://i.ibb.co/LzYL2GPn/E8-92.jpg' },
   { thumbnail: 'https://i.ibb.co/3ytgGsH0/E8-110.jpg', download: 'https://i.ibb.co/CpRRZp39/E8-110.jpg' },
   { thumbnail: 'https://i.ibb.co/tTBgKN8t/E8-305.jpg', download: 'https://i.ibb.co/93nvgcK0/E8-305.jpg' },
