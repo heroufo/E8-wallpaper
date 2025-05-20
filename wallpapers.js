@@ -102,4 +102,5 @@ const wallpapers = [
   { thumbnail: 'https://pic1.imgdb.cn/item/682c079358cb8da5c8fdbbe3.jpg', download: 'https://pic1.imgdb.cn/item/682c0ad058cb8da5c8fdcd38.jpg' },
   { thumbnail: 'https://pic1.imgdb.cn/item/682c079358cb8da5c8fdbbe1.jpg', download: 'https://pic1.imgdb.cn/item/682c0ad158cb8da5c8fdcd3b.jpg' },
   { thumbnail: 'https://pic1.imgdb.cn/item/682c079358cb8da5c8fdbbe2.jpg', download: 'https://pic1.imgdb.cn/item/682c0ad258cb8da5c8fdcd3f.jpg' },
+  { thumbnail: '', download: '' },
 ];
