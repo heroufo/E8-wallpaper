@@ -1,4 +1,10 @@
 const wallpapers = [
+  { thumbnail: 'https://pic1.imgdb.cn/item/683e73c158cb8da5c826ecf1.jpg', download: 'https://pic1.imgdb.cn/item/683e73ff58cb8da5c826f112.jpg' },
+  { thumbnail: 'https://pic1.imgdb.cn/item/683e73c158cb8da5c826ecf9.jpg', download: 'https://pic1.imgdb.cn/item/683e73ff58cb8da5c826f10b.jpg' },
+  { thumbnail: 'https://pic1.imgdb.cn/item/683e73c158cb8da5c826ed00.jpg', download: 'https://pic1.imgdb.cn/item/683e73ff58cb8da5c826f10f.jpg' },
+  { thumbnail: 'https://pic1.imgdb.cn/item/683e73c158cb8da5c826ecf8.jpg', download: 'https://pic1.imgdb.cn/item/683e73ff58cb8da5c826f10c.jpg' },
+  { thumbnail: 'https://pic1.imgdb.cn/item/683e73c158cb8da5c826ecfb.jpg', download: 'https://pic1.imgdb.cn/item/683e73ff58cb8da5c826f109.jpg' },
+  { thumbnail: 'https://pic1.imgdb.cn/item/683e73c158cb8da5c826ecf2.jpg', download: 'https://pic1.imgdb.cn/item/683e73ff58cb8da5c826f10e.jpg' },
   { thumbnail: 'https://pic1.imgdb.cn/item/6839058a58cb8da5c81b7636.jpg', download: 'https://pic1.imgdb.cn/item/6839050358cb8da5c81b73fc.jpg' },
   { thumbnail: 'https://pic1.imgdb.cn/item/6839058a58cb8da5c81b763b.jpg', download: 'https://pic1.imgdb.cn/item/6839050458cb8da5c81b73ff.jpg' },
   { thumbnail: 'https://pic1.imgdb.cn/item/6839058a58cb8da5c81b7637.jpg', download: 'https://pic1.imgdb.cn/item/6839050358cb8da5c81b73fd.jpg' },
